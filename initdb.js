@@ -177,7 +177,7 @@ db.prepare(
        creator_email TEXT NOT NULL
     )
 `
-);
+).run();
 
 async function initData() {
   const stmt = db.prepare(`
